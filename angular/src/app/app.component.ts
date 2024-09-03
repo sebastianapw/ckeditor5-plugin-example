@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { Testplugin } from '@mediknow/ckeditor5-testplugin';
+
 import {
   ClassicEditor,
   Bold,
@@ -16,7 +18,6 @@ import {
   Table,
   Undo,
 } from 'ckeditor5';
-import { Test } from '@mediknow/ckeditor5-test';
 import 'ckeditor5/ckeditor5.css';
 
 @Component({
@@ -27,14 +28,14 @@ import 'ckeditor5/ckeditor5.css';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'ckeditor-angular-custom-plugin-example';
+  title = 'angular';
 
   public Editor = ClassicEditor;
   public config = {
     toolbar: [
       'undo',
       'redo',
-      'testButton',
+      'testpluginButton',
       '|',
       'heading',
       '|',
@@ -63,7 +64,7 @@ export class AppComponent {
       Paragraph,
       Table,
       Undo,
-      Test
+      Testplugin
     ],
   };
 }

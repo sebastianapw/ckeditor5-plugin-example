@@ -1,5 +1,5 @@
 {
-  "name": "ckeditor-angular-custom-plugin-example",
+  "name": "angular",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -19,7 +19,7 @@
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
     "@ckeditor/ckeditor5-angular": "^8.0.0",
-    "@mediknow/ckeditor5-test": "file:../ckeditor5-test",
+    "@mediknow/ckeditor5-testplugin": "file:../ckeditor5-testplugin",
     "ckeditor5": "^43.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
