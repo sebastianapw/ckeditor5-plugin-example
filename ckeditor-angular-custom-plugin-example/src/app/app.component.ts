@@ -16,6 +16,7 @@ import {
   Table,
   Undo,
 } from 'ckeditor5';
+import { Test } from '@mediknow/ckeditor5-test';
 import 'ckeditor5/ckeditor5.css';
 
 @Component({
@@ -33,6 +34,7 @@ export class AppComponent {
     toolbar: [
       'undo',
       'redo',
+      'testButton',
       '|',
       'heading',
       '|',
@@ -61,6 +63,7 @@ export class AppComponent {
       Paragraph,
       Table,
       Undo,
+      Test
     ],
   };
 }
